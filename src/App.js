@@ -5,9 +5,7 @@ import data from './atlas-of-remote-islands.js';
 
 function App() {
   console.log(data);
-  let island1 = data.islands[0]
-  console.log(island1.description);
-  
+
   return (
     <div>
       <div className="container">
@@ -26,16 +24,6 @@ function App() {
                 longitude={island.coords.lon}/>)
 
            })}
-
-          <Card name={island1.name}   
-                description={island1.description}
-                image={island1.image}
-                latitude={island1.coords.lat}
-                longitude={island1.coords.lon}
-            
-                 />
-
-                
 
 
         </ul>
